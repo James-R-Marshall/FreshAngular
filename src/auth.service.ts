@@ -1,4 +1,4 @@
-import { CookieService } from 'ngx-cookie-service'
+import { CookieService } from '../node_modules/ngx-cookie-service'
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { User } from './user';

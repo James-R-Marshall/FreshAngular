@@ -15,7 +15,7 @@ import { ReccomendedComponent } from './reccomended/reccomended.component';
 import { FormsModule } from '@angular/forms';
 import { Quote } from '@angular/compiler';
 
-import { CookieService } from 'ngx-cookie-service';
+import { CookieService } from '../../node_modules/ngx-cookie-service';
 import { AuthService } from 'src/auth.service';
 
 @NgModule({

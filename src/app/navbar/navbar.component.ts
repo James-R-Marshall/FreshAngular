@@ -1,6 +1,6 @@
 import { Component, Injectable, OnInit } from '@angular/core';
-import { CookieService } from 'ngx-cookie-service';
-import jwt_decode from 'jwt-decode';
+import { CookieService } from '../../../node_modules/ngx-cookie-service';
+import jwt_decode from '../../../node_modules/jwt-decode';
 import { Observable } from 'rxjs';
 import { AuthService } from 'src/auth.service';
 
