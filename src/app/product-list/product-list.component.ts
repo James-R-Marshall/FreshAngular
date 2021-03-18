@@ -14,7 +14,7 @@ export class ProductListComponent implements OnInit {
   url;
   constructor(http:HttpClient, private route: ActivatedRoute) { 
     this.ngOnInit();
-    this.url = `http://216.137.177.30:8080/products?page=${this.page}&size=${this.size}`
+    this.url = `http://216.137.177.30:8080/products?page=${this.page}&size=${this.size}` 
     console.log(this.url)
     http.get(this.url).subscribe(res =>{
       this.entries = res;
