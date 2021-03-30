@@ -12,7 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { LoginComponent } from './login/login.component';
 import { ReccomendedComponent } from './reccomended/reccomended.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Quote } from '@angular/compiler';
 
 import { CookieService } from 'ngx-cookie-service';
@@ -32,6 +32,8 @@ import { AuthService } from 'src/auth.service';
   imports: [
     AppRoutingModule,
     HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule,  
     RouterModule.forRoot([
       {path: 
         '',
@@ -50,8 +52,7 @@ import { AuthService } from 'src/auth.service';
               component: ReccomendedComponent  },
               
             ]),
-    BrowserModule,
-    FormsModule  
+    BrowserModule
 ],
   providers: [
     CookieService,
